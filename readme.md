@@ -1,14 +1,14 @@
 16340187 任柱娴
 
-# 简介
+## 简介
 提供一个连接读者与图书馆的图书资源共享平台。
 
 如今人们阅读纸质书的频率越来越低，主要原因是购买纸质书需要成本，而从图书馆借书步骤繁琐：每个图书馆都需要办卡、缴纳押金；图书无法在线预约；不同的图书馆馆藏资源不共享，用户往往需要去多个图书馆才能找到自己想要的图书。希望通过为所有图书馆和读者提供服务，实现图书借阅线上化，最大化的提高资源利用率。
 
-# 环境配置
+## 环境配置
 本项目服务器环境：Linux + Nginx + MySQL + PHP 7.0 / PHP 5.6。
 
-## 配置 HTTPS
+### 配置 HTTPS
 小程序要求域名必须采用HTTPS协议。
 
 1. 在[腾讯云](https://qcloud.com/)购买域名与服务器，完成备案
@@ -39,7 +39,7 @@ server {
 
 }
 
-## URL 重写
+### URL 重写
 ThinkPHP 或 Slim 框架支持 RESTful API，但是必须通过它们的入口文件访问API。例如，获取id为 1 的图书信息时，URL如下：
 
 [https://www.my-api-server.cn/api/public/index.php/api/v1/books/1](https://www.my-api-server.cn/api/public/index.php/api/v1/books/1)
@@ -82,7 +82,7 @@ server {
 
 }
 
-# 安装运行
+## 安装运行
 打开微信开发者工具→新建项目→选择源码目录→填写appid
 
 在project.config.json中添加下列字段以忽略无用文件，否则会报错“代码包过大”。
